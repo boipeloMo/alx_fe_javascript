@@ -8,24 +8,29 @@
 <body>
   <h1>Dynamic Quote Generator</h1>
 
-   <div id="quoteDisplay"></div>
+    <div id="quoteDisplay"></div>
   <button id="newQuote">Show New Qoute</button>
 
     <h2>Add a New Qoute</h2>
   <div>
-    <input id="newQuoteText" type="text" placeholder="The only true wisdom is in knowing you know nothing." />
-    <input id="newQuoteCategory" type="text" placeholder="Philosphy" />
+    <input id="newQuoteText" type="text" placeholder="Tell me and I forget. Teach me and I remember. Involve me and I learn." />
+    <input id="newQuoteCategory" type="text" placeholder="Education" />
     <button id="addQuoteBtn">Add Qoute</button>
   </div>
 
-  <h2>Filter by Category</h2>
+   <h2>Filter by Category</h2>
   <select id="categoryFilter" onchange="filterQuotes()">
     <option value="all">All Categories</option>
-     </select>
+  </select>
 
-   <h2>Manage Quotes (JSON)</h2>
+  
+  <h2>Manage Quotes (JSON)</h2>
   <button id="exportBtn">Export Quotes (JSON)</button>
   <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
+
+    <div id="syncStatus" style="margin-top:20px; font-style:italic; color:green;">
+    Status: Idle
+  </div>
 
   <script src="script.js"></script>
 </body>
