@@ -9,14 +9,22 @@
   <h1>Dynamic Quote Generator</h1>
 
    <div id="quoteDisplay"></div>
-  <button id="newQuote">Show New Qoute</button> 
+  <button id="newQuote">Show New Qoute</button>
+
+ 
   <h2>Add a New Qoute</h2>
   <div>
     <input id="newQuoteText" type="text" placeholder="The journey of a thousand miles begins with a single step" />
-    <input id="newQuoteCategory" type="text" placeholder=" Philosophy" />
+    <input id="newQuoteCategory" type="text" placeholder="Philosophy" />
     <button id="addQuoteBtn">Add Qoute</button>
   </div>
+
+  <!-- JSON Import / Export -->
+  <h2>Manage Quotes (JSON)</h2>
+  <button id="exportBtn">Export Quotes (JSON)</button>
+  <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
 
   <script src="script.js"></script>
 </body>
 </html>
+
